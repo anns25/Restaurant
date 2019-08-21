@@ -1,0 +1,79 @@
+
+header #contact-details{
+	background: #5e2706;
+	display: block;
+	text-align: right;
+	margin-bottom: 0;
+}
+
+.contact-item{
+	display: inline;
+	text-decoration: none;
+	color: #d8d274;
+	padding-right: 30px;
+	font-size: .9em;
+}
+
+.contact-item a{
+	color: #d8d274;
+}
+
+#navbar-font{
+	background: transparent;
+}
+
+#navbar-font a{
+	color: #d8d274;
+}
+
+#navbar-font .navbar-brand{
+	font-size: 1.25em;
+}
+
+.navbar-toggler-icon{
+	color: #d8d274;
+}
+
+#navbar-font a:hover{
+	color: #898320;
+}
+
+.navbar{
+	position: relative;
+	z-index: 2;
+}
+
+.jumbotron{
+	position: absolute;
+	height: 110%;
+	top:24px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	color:  #d8d274;
+	padding-top: 20%;
+	padding-bottom: 20%;
+	background-size: cover;
+	background-image: url("images/jumbotron1.jpg");
+}
+
+.jumbotron h1{
+	font-weight: 400;
+}
+
+
+.overlay{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(48, 29, 17, 0.6);
+	z-index: 1;
+	
+}
+
+.inner{
+	position: relative;
+	z-index: 2;
+}
