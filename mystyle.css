@@ -1,5 +1,5 @@
 
-header #contact-details{
+/*header #contact-details{
 	background: #5e2706;
 	display: block;
 	text-align: right;
@@ -16,17 +16,25 @@ header #contact-details{
 
 .contact-item a{
 	color: #d8d274;
+}*/
+body{
+	background-color: #898320;
+}
+.navbar{
+	z-index: 2;
 }
 
-#navbar-font{
-	background: transparent;
+#navbar-style{
+	background: #5e2706;
+	opacity: 0.7;
+	font-size: 1.25em;
 }
 
-#navbar-font a{
+#navbar-style a{
 	color: #d8d274;
 }
 
-#navbar-font .navbar-brand{
+#navbar-style .navbar-brand{
 	font-size: 1.25em;
 }
 
@@ -34,19 +42,19 @@ header #contact-details{
 	color: #d8d274;
 }
 
-#navbar-font a:hover{
+#navbar-style a:hover{
 	color: #898320;
 }
 
-.navbar{
-	position: relative;
-	z-index: 2;
+.sticky{
+	position: fixed;
+	width: 100%;
 }
 
 .jumbotron{
 	position: absolute;
 	height: 110%;
-	top:24px;
+	top:0;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -59,8 +67,13 @@ header #contact-details{
 
 .jumbotron h1{
 	font-weight: 400;
+	width: 100%;
+	
 }
 
+.lead{
+	text-transform: uppercase;
+}
 
 .overlay{
 	position: absolute;
@@ -74,6 +87,11 @@ header #contact-details{
 }
 
 .inner{
+	text-align: center;
 	position: relative;
 	z-index: 2;
+}
+
+.fa-circle{
+	position: absolute;
 }

@@ -1,10 +1,8 @@
 console.log("connected");
-var nav = document.getElementById('navbar-font');
-  window.scroll = function(){
-    if (window.pageYOffset > 5) {
-    	nav.style.background = "#5e2706";
-    }
-    else{
-    	nav.style.background = "transparent";
+var nav = document.getElementById('navbar-style');
+  window.onscroll = function(){
+    if (window.pageYOffset > nav.offsetTop) {
+		nav.classList.add("sticky");
+    	console.log(window.pageYOffset);
     }
   }
