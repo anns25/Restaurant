@@ -20,6 +20,9 @@
 body{
 	background-color: #898320;
 }
+
+/***** NAVBAR *****/
+
 .navbar{
 	z-index: 2;
 }
@@ -39,7 +42,7 @@ body{
 }
 
 .navbar-toggler-icon{
-	color: #d8d274;
+	background-color: #d8d274;
 }
 
 #navbar-style a:hover{
@@ -50,6 +53,70 @@ body{
 	position: fixed;
 	width: 100%;
 }
+
+/**** HAMBURGER ****/
+
+button.navbar-toggler{
+	margin-top: 8px;
+	position: relative;
+}
+
+#hamburger-click input{
+	display: block;
+	width: 40px;
+	height: 32px;
+	position: absolute;
+	top: 0px;
+	left: 10px;
+
+	cursor: pointer;
+
+	opacity: 0;
+	z-index: 2;
+}
+
+span.hamburger{
+	display: block;
+	width: 33px;
+	height: 4px;
+	margin-bottom: 5px;
+	position: relative;
+
+	background-color: #d8d274;
+	border-radius: 3px;
+
+	z-index: 1;
+
+	transform-origin: 4px 0px;
+
+	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+span.hamburger:first-child{
+	transform-origin: 0% 0%;
+}
+
+span.hamburger:nth-last-child(1){
+	transform-origin: 0% 100%;
+}
+
+#hamburger-click input:checked ~ span{
+	opacity: 1;
+	transform: rotate(45deg) translate(-2px, 1px);
+}
+
+#hamburger-click input:checked ~ span:nth-last-child(2){
+	opacity: 0;
+	transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#hamburger-click input:checked ~ span:nth-last-child(1){
+	opacity: 1;
+	transform: rotate(-45deg) translate(0, -1px);
+}
+
+/***** JUMBOTRON *****/
 
 .jumbotron{
 	position: absolute;
@@ -95,3 +162,4 @@ body{
 .fa-circle{
 	position: absolute;
 }
+
