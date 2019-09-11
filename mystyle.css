@@ -103,7 +103,7 @@ span.hamburger:nth-last-child(1){
 
 #hamburger-click input:checked ~ span{
 	opacity: 1;
-	transform: rotate(45deg) translate(-2px, 1px);
+	transform: rotate(45deg) /*translate(-2px, 1px);*/
 }
 
 #hamburger-click input:checked ~ span:nth-last-child(2){
@@ -113,7 +113,7 @@ span.hamburger:nth-last-child(1){
 
 #hamburger-click input:checked ~ span:nth-last-child(1){
 	opacity: 1;
-	transform: rotate(-45deg) translate(0, -1px);
+	transform: rotate(-45deg) translate(0px, 1px);
 }
 
 /***** JUMBOTRON *****/
