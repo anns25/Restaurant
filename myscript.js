@@ -6,3 +6,4 @@ var nav = document.getElementById('navbar-style');
     	console.log(window.pageYOffset);
     }
   }
+
