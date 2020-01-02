@@ -1,11 +1,15 @@
 
 :root{
-	--primary-font:'Yeseva One', cursive;
+	--primary-font: 'Yeseva One', cursive;
 	--secondary-font: 'Josefin Sans', sans-serif;
 	--bg-color: #898320;
 	--bg-color-highlight: #5e2706;
 	--text-color-dark: #d8d274;
 	--text-color-hover: #898320;
+}
+
+html{
+	font-size: 62.5%;
 }
 
 body{
@@ -21,7 +25,7 @@ body{
 #navbar-style{
 	background: var(--bg-color-highlight);
 	opacity: 0.8;
-	font-size: 1.15em;
+	font-size: 1.75rem;
 }
 
 #navbar-style a{
@@ -31,7 +35,7 @@ body{
 }
 
 #navbar-style .navbar-brand{
-	font-size: 1.45em;
+	font-size: 2.5rem;
 	font-family: var(--primary-font);
 }
 
@@ -127,12 +131,13 @@ span.hamburger:nth-last-child(1){
 }
 
 .jumbotron p.slogan{
-	font-size: 2.5em;
+	font-size: 3rem;
 	width: 100%;
 	font-family: var(--primary-font);
 }
 
 .lead{
+	font-size: 2rem;
 	text-transform: capitalize;
 	font-family: var(--secondary-font);
 }
@@ -163,13 +168,11 @@ span.hamburger:nth-last-child(1){
 /***** SMALL AND MEDIUM DEVICES *****/
 
 @media (max-width: 991px){
-	.jumbotron p.slogan{
-		font-size: 2.5rem;
-	}
-	.lead{
-		font-size: 1.5rem;
-	}
 
+	html{
+		font-size: 83%;
+	}
+	
 	/***** MENU TOGGLE STYLE *****/
 
 body{
@@ -202,8 +205,5 @@ body{
 	opacity: 1;
 }
 
-#navbar-style a{
-	font-size: 1.5em;
-}
 
 }
