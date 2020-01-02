@@ -13,7 +13,7 @@ html{
 }
 
 body{
-	background-color: var(--bg-color);
+	background-color: var(--bg-color-highlight);
 }
 
 /***** NAVBAR *****/
@@ -164,6 +164,52 @@ span.hamburger:nth-last-child(1){
 	z-index: 2;
 }
 
+#placeholder{
+	height: 100vh;
+}
+
+
+/***** MENU SPECIALS GALLERY *****/
+
+h1{
+	font-family: var(--primary-font);
+	color: var(--text-color-dark);
+	padding: 25px;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+.gallery-column img{
+	display: block;
+	max-width: 100%;
+	height: auto;
+	padding: 5px 5px 0 0;
+}
+
+.col-lg-3, .col-md-2, .col-sm-1{
+	padding: 0;
+}
+
+/***** SITE MAP *****/
+
+.site-map{
+	background-color: var(--text-color-dark);
+	color: var(--bg-color-highlight);
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-top: 25px;
+}
+
+.site-map a{
+	color: var(--bg-color-highlight);
+	font-weight: bold;
+}
+
+.site-map ul{
+	list-style-type: none;
+	font-size: 1.25rem;
+}
+
 
 /***** SMALL AND MEDIUM DEVICES *****/
 
@@ -197,7 +243,7 @@ span.hamburger:nth-last-child(1){
 	}
 
 	#navbar-style a{
-		font-size: 2.25rem;	}
+		font-size: 2.25rem;	
 	}
 
 	#navbar-style{
