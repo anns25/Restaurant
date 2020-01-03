@@ -50,6 +50,7 @@ body{
 .sticky{
 	position: fixed;
 	width: 100%;
+	z-index: 100;
 }
 
 /**** HAMBURGER ****/
@@ -206,6 +207,7 @@ h1{
 	color: var(--text-color-dark);
 	background-color: var(--bg-color-highlight);
 }
+
 .img-description:hover{
 	opacity: 0.75;
 	transition: all .75s ease;
