@@ -16,4 +16,8 @@ console.log("connected");
  			$('#navbar-style').addClass('sticky');
  	});
 });
+
+ $('#hamburger-click').click(function(){
+ 	$('#navbarSupportedContent').fadeToggle(500);
+ })
  
