@@ -284,10 +284,7 @@ h1{
 
 .menu-categories ul{
 	font-size: 1.75rem;
-	font-family: var(--secondary-font);
-	list-style-type: square;
-	font-size: 1.75rem;
-	font-family: var(--secondary-font);
+	font-family: var(--secondary-font);	
 	list-style-type: square;
 	text-transform: capitalize;  
 }
