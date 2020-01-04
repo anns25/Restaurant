@@ -251,9 +251,9 @@ h1{
 }
 
 
-/***** MENU ******/
+/***** MENU PAGE ******/
 
-#menu h1{
+#menu h1, #about h1{
 	padding : 10vh 0 5vh 0;
 }
 
@@ -282,15 +282,17 @@ h1{
 	font-weight: bold;
 }
 
-.menu-categories ul{
+table{
+	border: none;
 	font-size: 1.75rem;
 	font-family: var(--secondary-font);	
-	list-style-type: square;
-	text-transform: capitalize;  
+	list-style-type: none;
+	text-transform: capitalize;
+	width: 100%;  
 }
 
-.menu-categories ul li{
-	line-height: 2.5;
+td{
+	padding: 10px 25px ;
 }
 
 .menu-categories .overlay{
@@ -311,6 +313,36 @@ h1{
 	background-size: cover;
 }
 
+/***** ABOUT PAGE *****/
+
+#about img{
+	margin: 15px;
+	border-color: var(--text-color-hover);
+	border-style: solid;
+	border-width: 3.5px
+}
+
+.pics{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+figcaption.figure-caption{
+	font-size: 1.25rem;
+	color: var(--text-color-dark);
+	font-family: var(--secondary-font);
+}
+
+.para{
+	font-size: 1.75rem;
+	color: var(--text-color-dark);
+	font-family: var(--secondary-font);
+	line-height: 2.5;
+	text-align: center;
+}
 
 /***** SMALL AND MEDIUM DEVICES *****/
 
@@ -388,4 +420,17 @@ h1{
 		background-image: url("Images/clarissa-carbungco-uy9DJw9e_vs-unsplash1.jpg");
 		background-size: cover;
 	}
+
+	/***** ABOUT PAGE *****/
+
+	.pics{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 50%;
+		height: auto;
+		margin-left: auto;
+		margin: auto;		
+	}
+	
 }

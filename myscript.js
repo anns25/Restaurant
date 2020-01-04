@@ -21,3 +21,4 @@ console.log("connected");
  	$('#navbarSupportedContent').fadeToggle(500);
  })
  
+ 
