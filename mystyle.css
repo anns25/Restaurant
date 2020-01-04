@@ -250,6 +250,59 @@ h1{
 }
 
 
+/***** MENU ******/
+
+#menu h1{
+	padding : 10vh 0 10vh 0;
+}
+
+.menu-categories{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+	position: relative;
+	color: var(--text-color-dark);
+}
+
+.menu-categories h2{
+	margin: 100px 175px 15px 175px ;
+	text-transform: capitalize;
+	font-size: 2.25rem;
+	font-family: var(--primary-font);
+	z-index: 10;
+	font-weight: bold;
+}
+
+.menu-categories ul{
+	margin: 0 75px 100px 75px;
+	font-size: 1.75rem;
+	font-family: var(--secondary-font);
+	list-style-type: square;
+	z-index: 10; 
+}
+
+.menu-categories ul li{
+	line-height: 2;
+}
+
+#breakfast{
+	background-image: url("Images/brooke-lark-08bOYnH_r_E-unsplash.jpg");
+	background-size: cover;
+}
+
+#lunch{
+	background-image: url("Images/alyssa-kowalski-97YFGmT3Cu8-unsplash.jpg");
+	background-size: cover;
+}
+#drinks{
+	background-image: url("Images/freshh-connection-4J3QPi3sILc-unsplash.jpg");
+	background-size: cover;
+}
+
+
 /***** SMALL AND MEDIUM DEVICES *****/
 
 @media (max-width: 991px){
