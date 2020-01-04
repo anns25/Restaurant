@@ -151,7 +151,8 @@ span.hamburger:nth-last-child(1){
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: rgba(48, 29, 17, 0.6);
+	background-color: rgba(48, 29, 17);
+	opacity: 0.6;
 	z-index: 1;
 	
 }
@@ -253,7 +254,7 @@ h1{
 /***** MENU ******/
 
 #menu h1{
-	padding : 10vh 0 10vh 0;
+	padding : 10vh 0 5vh 0;
 }
 
 .menu-categories{
@@ -264,28 +265,39 @@ h1{
 	height: auto;
 	margin-bottom: 10px;
 	position: relative;
+}
+
+.menu-box{
+	margin: 100px;
 	color: var(--text-color-dark);
+	z-index: 10;
 }
 
 .menu-categories h2{
-	margin: 100px 175px 15px 175px ;
+	text-align: center;
+	margin-bottom: 25px;
 	text-transform: capitalize;
 	font-size: 2.25rem;
 	font-family: var(--primary-font);
-	z-index: 10;
 	font-weight: bold;
 }
 
 .menu-categories ul{
-	margin: 0 75px 100px 75px;
 	font-size: 1.75rem;
 	font-family: var(--secondary-font);
 	list-style-type: square;
-	z-index: 10; 
+	font-size: 1.75rem;
+	font-family: var(--secondary-font);
+	list-style-type: square;
+	text-transform: capitalize;  
 }
 
 .menu-categories ul li{
-	line-height: 2;
+	line-height: 2.5;
+}
+
+.menu-categories .overlay{
+	opacity: 0.75;
 }
 
 #breakfast{
@@ -357,5 +369,26 @@ h1{
 
 	.img-description p{
 		font-size: 2.25rem
+	}
+
+	/***** MENU PAGE *****/
+
+	.menu-box{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#breakfast{
+		background-image: url("Images/kavita-joshi-rai-lE5O9DktAQY-unsplash.jpg");
+		background-size: cover;
+	}
+
+	#lunch{
+		background-image: url("Images/eiliv-sonas-aceron-R1_0gSXks5Y-unsplash1.jpg");
+		background-size: cover;
+	}
+	#drinks{
+		background-image: url("Images/clarissa-carbungco-uy9DJw9e_vs-unsplash1.jpg");
+		background-size: cover;
 	}
 }
