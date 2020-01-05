@@ -21,4 +21,9 @@ console.log("connected");
  	$('#navbarSupportedContent').fadeToggle(500);
  })
  
- 
+if($(window).width() < 992) {
+ 	$('#contact .box').removeClass('ml-auto mr-auto ml-5 mr-5');
+  }
+ else{
+ 	$('#contact .box').addClass('ml-auto mr-auto ml-5 mr-5');
+ }
