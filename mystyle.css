@@ -315,12 +315,6 @@ td{
 
 /***** ABOUT PAGE *****/
 
-#about img{
-	border-color: var(--text-color-hover);
-	border-style: solid;
-	border-width: 3.5px
-}
-
 .pics{
 	display: flex;
 	flex-direction: row;
@@ -329,10 +323,13 @@ td{
 	margin-bottom: 60px;
 }
 
-figcaption.figure-caption{
-	font-size: 1.25rem;
-	color: var(--text-color-dark);
-	font-family: var(--secondary-font);
+.img-caption .box img{
+	width: 100%;
+}
+
+.img-caption .img-description{
+	opacity: 0.9;
+	top:85%;
 }
 
 .para{
@@ -426,10 +423,14 @@ figcaption.figure-caption{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		width: 50%;
+		width: 60%;
 		height: auto;
 		margin-left: auto;
-		margin: auto;		
+		margin-right: auto;		
+	}
+
+	.img-caption .box:first-child{
+		margin-bottom: 15px;
 	}
 	
 }
