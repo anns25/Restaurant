@@ -6,6 +6,7 @@
 	--bg-color-highlight: #5e2706;
 	--text-color-dark: #d8d274;
 	--text-color-hover: #898320;
+	--text-color-sitemap: #3a1600;
 }
 
 html{
@@ -233,15 +234,15 @@ h1{
 /***** SITE MAP *****/
 
 .site-map{
-	background-color: var(--text-color-hover);
-	color: var(--bg-color-highlight);
+	background-color: var(--text-color-sitemap);
+	color: var(--text-color-dark);
 	padding-top: 30px;
 	padding-bottom: 30px;
 	margin-top: 25px;
 }
 
 .site-map a{
-	color: var(--bg-color-highlight);
+	color: var(--text-color-dark);
 }
 
 .site-map ul{
