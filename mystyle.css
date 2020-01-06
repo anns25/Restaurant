@@ -233,7 +233,7 @@ h1{
 /***** SITE MAP *****/
 
 .site-map{
-	background-color: var(--text-color-dark);
+	background-color: var(--text-color-hover);
 	color: var(--bg-color-highlight);
 	padding-top: 30px;
 	padding-bottom: 30px;
