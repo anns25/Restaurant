@@ -242,12 +242,23 @@ h1{
 
 .site-map a{
 	color: var(--bg-color-highlight);
-	font-weight: bold;
 }
 
 .site-map ul{
 	list-style-type: none;
-	font-size: 1.25rem;
+	font-size: 1.5rem;
+
+}
+
+.site-map ul li:first-child{
+	font-weight: bold;
+	font-size: 1.75rem;
+	padding-bottom: 15px;
+}
+
+.site-map i{
+	font-size: 3rem;
+	
 }
 
 
@@ -473,5 +484,4 @@ td{
 		margin-left: auto;
 		margin-right: auto;
 	}
-	
 }
